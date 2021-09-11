@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url("Fonts/Red_Hat_Display/RedHatDisplay-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url("Fonts/Red_Hat_Display/RedHatDisplay-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url("Fonts/Red_Hat_Display/RedHatDisplay-Black.ttf") format("truetype");
+    font-weight: 900;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: RedHatDisplay, sans-serif ;
+    font-size: 1rem;
+    background-color: #e0e8ff;
+}
+
+.app{
+    height: 100vh;
+}
+
+.content-container{
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+.background-mobile__image{
+    background-image: url("Images/pattern-background-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+
+.contents{
+    width: 100%;
+    position: absolute;
+    top: 71px;
+    padding: 0 24px;
+}
+.content{
+    position: relative;
+    background-color: #ffffff;
+    margin: auto;
+    width: 327px;
+    height: 567px;
+    box-shadow: 0 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    border-radius: 20px;
+}
+
+.content-image{
+    background-image: url("Images/illustration-hero.svg");
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    left: 0;
+    top: 0;
+}
+
+.content-details {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+}
+
+p{
+    margin: 0;
+}
+
+.content-details__header{
+    font-size: 1.375rem;
+    font-weight: 900;
+    #1F2E55
+}
+
+.content-details__content{
+    padding-top: 16px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 0.94rem;
+    font-weight: 500;
+    color: #717fa6;
+}
